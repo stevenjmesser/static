@@ -19,6 +19,8 @@ Rails.application.routes.draw do
   get "/apple-touch-icon-167x167.png", to: "icon_redirects#show"
   get "/apple-touch-icon-152x152.png", to: "icon_redirects#show"
 
+  get "/brexit-countdown", to: "icon_redirects#brexit", format: :svg
+
   # Old devices with old OSs may still request these old image sizes
   # They should receive a working image.
   # It's acceptable to send them a higher resolution image which they will downscale.
